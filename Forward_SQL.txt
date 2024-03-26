@@ -23,7 +23,7 @@ USE `LittleLemonDB` ;
 CREATE TABLE IF NOT EXISTS `LittleLemonDB`.`Customer_Details` (
   `customer_id` INT NOT NULL,
   `name` VARCHAR(45) NOT NULL,
-  `contact_number` INT NOT NULL,
+  `contact_number` VARCHAR(12) NOT NULL,
   `address` VARCHAR(250) NOT NULL,
   PRIMARY KEY (`customer_id`),
   UNIQUE INDEX `contact_number_UNIQUE` (`contact_number` ASC) VISIBLE)
